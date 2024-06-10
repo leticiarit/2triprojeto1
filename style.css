@@ -1,5 +1,10 @@
+@import url("style/header.css");
+@import url("style/banner.css");
 :root{
-    --cor-de-fundo: #d8dadd; 
+    --cor-de-fundo: #d8dadd;
+    --branco:#c3c5c7;
+    --laranja:#cf9f5b;
+    --preto:#000000;
 }
 
 body{

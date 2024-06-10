@@ -1,0 +1,49 @@
+.cabeçalho__pão_delicia{
+    width: 24px;
+    height: 24px;
+    background-image: url("img/bolo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabeçalho{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60%;
+}
+
+.container__botao:checked ~ .lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+}
+
+.lista-menu__link{
+color: black;
+}
