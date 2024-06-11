@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padaria onde pão fresco sai todo o dia </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="redefinir.css">
 </head>
 
@@ -39,9 +40,58 @@
         <a href="#"><img src="img/whatsapp.png" class="container__imagem"></a>
         </div>
     </header>
+    <section class="banner">
      <h2 class="banner__titulo">compre o seu pão de todo o dia agora na palma da sua mão</h2>
      <p class="banner__ texto">tudo de melhor para o seu café em familia</p>
      <input type="search" class="banner__pesquisa" placeholder="qual vai ser o seu pedido">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">comidas sempre fresca</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/paezinhos.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/pao-de-forma.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/bolo.png" alt=""></div>
+      ...
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
 </body>
 
 </html>
