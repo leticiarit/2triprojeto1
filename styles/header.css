@@ -1,14 +1,14 @@
-.cabeçalho__pão_delicia {
+.cabeçalho__menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-image: url("img/bolo.png");
+    display: inline-block;
+    background-image: url("../paezinhos.png");
     background-repeat: no-repeat;
     background-position: center;
-    display: inline-block;
 }
 
 .cabeçalho {
-    background-color: bisque;
+    background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 60%;
+    width: 60vw;
 }
 
 .container__botao:checked~.lista-menu {
@@ -47,9 +47,36 @@
 }
 
 .lista-menu__link {
-    color: black;
+    background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
+}
+
+.cabeçalho__titulo {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container__titulo,
+    .cabeçalho__titulo-negrito {
+        font-family: var(--fonte-segundario);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .cabeçalho__titulo-negrito {
+        font-weight: 700;
+    }
+
 }
